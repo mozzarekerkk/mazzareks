@@ -1,0 +1,120 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: #121212; /* тёмный фон */
+  color: #e0e0e0;      /* светлый текст */
+}
+
+header {
+  background-image: linear-gradient(to right, #1A00C3 , #D500FF);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e1e1e; /* тёмные карточки */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  flex: 1 1 250px;
+  padding: 20px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #2a2a2a;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #4cc9f0; /* яркий акцент */
+}
+
+.timeline {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #4cc9f0; /* линия акцентного цвета */
+}
+
+.event {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.event::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: #7209b7; /* фиолетовый кружок */
+  border-radius: 50%;
+  border: 3px solid #121212;
+  box-shadow: 0 0 0 3px #4cc9f0;
+}
+
+footer {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #4cc9f0;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f72585; /* розовый акцент при наведении */
+}
+
+/* стиль кнопки */
+.about-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #4cc9f0, #7209b7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.about-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #f72585, #7209b7);
+}
