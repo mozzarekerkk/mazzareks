@@ -47,26 +47,6 @@ section {
   margin-top: 0;
   color: #4cc9f0; /* яркий акцент */
 }
-.card img {
-  width: 100%;
-  height: 200px;          /* фиксированная высота для аккуратности */
-  object-fit: cover;      /* фото обрезается по размеру карточки */
-  display: block;
-  overflow: hidden;
-}
-
-/* квадратные фото с закруглением */
-.square-img {
-  border-radius: 15px;
-}
-
-/* круглое фото */
-.circle-img {
-  border-radius: 50%;
-  width: 150px;           /* круг лучше делать фиксированным */
-  height: 150px;
-  margin: 0 auto;         /* центрируем внутри карточки */
-}
 
 .timeline {
   position: relative;
@@ -138,26 +118,3 @@ footer a:hover {
   transform: scale(1.05);
   background: linear-gradient(to right, #f72585, #7209b7);
 }
-
-.social-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: none;          /* убираем рамку */
-  outline: none;         /* убираем обводку при клике */
-  border-radius: 10px;   /* оставляем скругление углов */
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-/* если рамка появляется у ссылок вокруг картинок */
-a img {
-  border: none;
-  outline: none;
-}
-
