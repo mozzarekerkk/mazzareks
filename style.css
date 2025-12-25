@@ -27,15 +27,21 @@ section {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center; /* чтобы карточки красиво выравнивались */
 }
 
 .card {
   background: #1e1e1e; /* тёмные карточки */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.6);
-  flex: 1 1 250px;
+  width: 250px;         /* фиксированная ширина */
+  height: 350px;        /* фиксированная высота */
   padding: 20px;
   transition: transform 0.3s, background 0.3s;
+  display: flex;        /* чтобы содержимое выравнивалось */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -47,6 +53,15 @@ section {
   margin-top: 0;
   color: #4cc9f0; /* яркий акцент */
 }
+
+/* Фото внутри карточки */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;   /* фото обрезается по размеру */
+  border-radius: 10px; /* закругление углов */
+}
+
 
 .timeline {
   position: relative;
