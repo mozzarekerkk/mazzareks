@@ -118,3 +118,25 @@ footer a:hover {
   transform: scale(1.05);
   background: linear-gradient(to right, #f72585, #7209b7);
 }
+
+.social-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: none;          /* убираем рамку */
+  outline: none;         /* убираем обводку при клике */
+  border-radius: 10px;   /* оставляем скругление углов */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* если рамка появляется у ссылок вокруг картинок */
+a img {
+  border: none;
+  outline: none;
+}
