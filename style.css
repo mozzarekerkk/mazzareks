@@ -34,8 +34,8 @@ section {
   background: #1e1e1e; /* тёмные карточки */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.6);
-  width: 250px;         /* фиксированная ширина */
-  height: 350px;        /* фиксированная высота */
+  width: 125px;         /* фиксированная ширина */
+  height: 140px;        /* фиксированная высота */
   padding: 20px;
   transition: transform 0.3s, background 0.3s;
   display: flex;        /* чтобы содержимое выравнивалось */
@@ -57,7 +57,7 @@ section {
 /* Фото внутри карточки */
 .card img {
   width: 100%;
-  height: 200px;
+  height: 75px;
   object-fit: cover;   /* фото обрезается по размеру */
   border-radius: 10px; /* закругление углов */
 }
