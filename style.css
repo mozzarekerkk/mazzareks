@@ -145,7 +145,7 @@ footer a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.6);
   width: 500px;         
-  height: 180px;        
+  height: 200px;        
   padding: 20px;
   transition: transform 0.3s, background 0.3s;
   display: flex;        
@@ -162,3 +162,4 @@ footer a:hover {
 .carda h3 {
   margin-top: 0;
   color: #4cc9f0; /* яркий акцент */
+
